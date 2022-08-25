@@ -1,15 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace CodeHelper.API.Awin
 {
-    public enum MembershipTypes
+    public struct MembershipTypes
     {
-        all,
-        joined, 
-        notJoined
+        #region Properties
+        public const string All = "all";
+        public const string Pending = "pending";
+        public const string Suspended = "suspended";
+        public const string Rejected = "rejected";
+        public const string Joined = "joined";
+        public const string NotJoined = "notJoined";
+        #endregion
     }
 }

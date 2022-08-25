@@ -1,5 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 using System.Text.Json;
+using System.Net.Http;
 namespace CodeHelper.API.Awin
 {
     public class PromotionSearchFilter : BaseAwinClass
@@ -14,7 +15,7 @@ namespace CodeHelper.API.Awin
         #endregion
 
         #region Public Methods
-        public HttpContent GetJson()
+        public HttpContent GetJsonString()
         {
             return new StringContent(JsonSerializer.Serialize(this), System.Text.Encoding.UTF8, "application/json");
         }

@@ -1,10 +1,41 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<RootNamespace>CodeHelper.API.Awin</RootNamespace>
+		<ApplicationIcon>CodeHelper-Logo.ico</ApplicationIcon>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Description>
+			CodeHelper.API.Awin helps businesses save time by automating their daily tasks. It provides advertiser-specific endpoints as well as publisher-specific endpoints.
+		</Description>
+		<summary>
+			A modern lightweight .NET mapper for Awin Affiliate Platform
+			Get Accounts, Get Promotions, Get Programs, GetTransactionsAsPublisher, GetTransactionsAsAdvertiser
+		</summary>
+		<Copyright>MIT License</Copyright>
+		<PackageIcon>CodeHelper-Logo.jpg</PackageIcon>
+		<RepositoryUrl>https://github.com/frederikvanlierde/CodeHelper.API.Awin</RepositoryUrl>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageTags>.net core, affiliate, awin</PackageTags>
+		<PackageVersion>1.1.0.0</PackageVersion>
+		<RepositoryType>git</RepositoryType>
+		<AssemblyVersion>1.1.0.0</AssemblyVersion>
+		<FileVersion>1.1.0.0</FileVersion>
+		<Version>1.1.0</Version>
+	</PropertyGroup>
+	<ItemGroup>
+		<Content Include="CodeHelper-Logo.ico" />
+	</ItemGroup>
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-  </PropertyGroup>
-
-</Project>
+	<ItemGroup>
+		<None Include="CodeHelper-Logo.jpg">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="LICENSE.txt" Pack="true" PackagePath="" />
+	</ItemGroup>
+	</Project>
