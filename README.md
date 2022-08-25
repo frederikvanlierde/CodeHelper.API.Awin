@@ -33,3 +33,7 @@ To obtain your token visit <https://ui.awin.com/awin-api> or click on the "API c
 
 ## Usage
 To guarantee smooth operation for all our publishers and advertisers, we currently have a throttling in place that limits the number of API requests to 20 API calls per minute per user.
+
+## Upgrade from V1.0.0 to V1.1.0
+In version 1.0.0, only AwinHelper class was available.   In V1.1.0 We have split into AwinHelperPublisher and AwinHelperAdvertsier.
+As i V1.0.0 we only had methods for Publishers, you need only chaneg your code from **AwinHelper** to **AwinHelperPublisher**
